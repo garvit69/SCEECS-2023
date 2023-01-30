@@ -2791,7 +2791,7 @@ img {
     float: left;
     z-index: 2;
     margin: 0 auto;
-    padding: 95px 15px 60px 100px;
+    padding: 60px 15px 60px 100px;
 }
 
 .fluid-section-one .content-column .content-box .sec-title h2 {
@@ -5206,6 +5206,7 @@ img {
     text-align: left;
     padding-right: 0px;
     padding-left: 70px;
+    width: max-content;
 }
 
 .programs-block.style-two .inner-block .content .program-info .dott {
