@@ -28,6 +28,9 @@
     .main-header {
         margin: 0px !important;
     }
+    .outer-box .icon-box img{
+        display: none;
+    }
     .blog-classic,
     .blog-detail .inner-box,
     .festival-section .image-column .inner-column {

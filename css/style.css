@@ -686,18 +686,18 @@ img {
     -o-transition: all 500ms ease;
 }
 
-.main-header .header-upper .outer-box .cart-btn {
+.main-header .header-upper .outer-box .icon-box {
     position: relative;
     float: left;
+    display: flex;
     margin-left: 16px;
     margin-top: 14px;
 }
 
-.main-header .header-upper .outer-box .cart-btn .icon {
+.main-header .header-upper .outer-box .icon-box img {
     position: relative;
-    color: #ffffff;
-    font-size: 22px;
-    line-height: 1.3em;
+    height: 3rem;
+    margin-right: 12px;
 }
 
 .main-header .header-upper .outer-box .btn-box {
