@@ -129,6 +129,12 @@ li {
     margin: 0px;
 }
 
+.main-header .header-upper .outer-box .icon-box img {
+    position: relative;
+    height: 3rem;
+    margin-right: 12px;
+}
+
 img {
     display: inline-block;
     max-width: 100%;
