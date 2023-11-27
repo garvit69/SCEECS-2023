@@ -553,10 +553,10 @@ setTimeout(function () { $('#myModal').modal('hide'); }, 10000);
        When document is loading, do
        ========================================================================== */
 
-    // $(window).on('load', function () {
-    //     handlePreloader();
-    //     //sortableMasonry();
-    // });
+    $(window).on('load', function () {
+        handlePreloader();
+        //sortableMasonry();
+    });
 
 })(window.jQuery);
 
