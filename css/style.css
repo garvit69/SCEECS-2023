@@ -5213,9 +5213,9 @@ img {
     padding-left: 63px;
     width: max-content;
 }
-@media only screen and (min-width: 1000 px){
+@media only screen and (min-width: 1023px){
   .makeDotResponsive{
-      padding-left: 22px;
+      padding-left: 22px !important ;
   }
 }
 
