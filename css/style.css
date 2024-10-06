@@ -45,6 +45,10 @@ a {
     color: #ff006a;
 }
 
+.bold{
+   font-weight:700;
+}
+
 button,
 a:hover,
 a:focus,
