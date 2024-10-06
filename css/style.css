@@ -5210,8 +5210,13 @@ img {
     right: -280px;
     text-align: left;
     padding-right: 0px;
-    padding-left: 70px;
+    padding-left: 63px;
     width: max-content;
+}
+@media only screen and (min-width: 1000 px){
+  .makeDotResponsive{
+      padding-left: 22px;
+  }
 }
 
 .programs-block.style-two .inner-block .content .program-info .dott {
