@@ -576,15 +576,15 @@ function popPage(){
     var overlay = document.getElementById("overlay");
 
     document.addEventListener("DOMContentLoaded",()=>{
-        if(!sessionStorage.getItem("#popUp")){
+        // if(!sessionStorage.getItem("#popUp")){
             setTimeout(()=>{
                  overlay.style.transition = "display 0.5s"
                 overlay.style.display = "block";
                 popUp.style.display = "flex";
             },2000);
-            sessionStorage.setItem("#popUp","true");
-            sessionStorage.setItem("#overlay","true");
-        }
+            // sessionStorage.setItem("#popUp","true");
+            // sessionStorage.setItem("#overlay","true");
+        //}
     })
     overlay.addEventListener('click',()=>{
         overlay.style.display = "none";
