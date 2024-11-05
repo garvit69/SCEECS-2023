@@ -578,7 +578,7 @@ function popPage(){
     document.addEventListener("DOMContentLoaded",()=>{
         if(!sessionStorage.getItem("#popUp")){
             setTimeout(()=>{
-                // overlay.style.transition = "display 0.5s"
+                 overlay.style.transition = "display 0.5s"
                 overlay.style.display = "block";
                 popUp.style.display = "flex";
             },2000);
@@ -598,4 +598,4 @@ function popPage(){
     });
 }
 
-// popPage();
+popPage();
