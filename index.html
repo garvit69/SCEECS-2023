@@ -429,7 +429,7 @@
               <div class="buttons-box clearfix">
                 <a href="https://ieeenitb.com/" target="_blank"><span class="theme-btn btn-style-two">Visit
                     IEEE-MSB</span></a>
-                <a href="docs/Call_for_papers_Final[11}123-01.png" download="callforpaper" ><span class="theme-btn btn-style-three ">Call For Paper</span></a>
+                <a id="scrollBtn"><span class="theme-btn btn-style-three ">Check Scheduling</span></a>
               </div>
             </div>
           </div>
@@ -1309,7 +1309,7 @@
 
         </div>
 
-       <table class="table"> 
+       <table class="table scrollSec"> 
           <thead>
             <tr>
               <th scope="col">Mode</th>
@@ -2486,6 +2486,15 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/paroller.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollBtn");
+    const scrollSec = document.getElementsByClassName("scrollSec");
+
+    scrollBtn.addEventListener('click', () => {
+            scrollSec.scrollIntoView({ behavior: 'smooth' });
+        });
+  </script>
 
 </body>
 
