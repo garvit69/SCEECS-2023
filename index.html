@@ -429,7 +429,7 @@
               <div class="buttons-box clearfix">
                 <a href="https://ieeenitb.com/" target="_blank"><span class="theme-btn btn-style-two">Visit
                     IEEE-MSB</span></a>
-                <a href="docs/Call_for_papers_Final[11}123-01.png" download="callforpaper" ><span class="theme-btn btn-style-three ">Call For Paper</span></a>
+                <a href='#check'><span class="theme-btn btn-style-three ">Check Scheduling</span></a>
               </div>
             </div>
           </div>
@@ -1300,7 +1300,7 @@
       </div>
   </section>
 
-    <!-- <section id="check" class="news-section">
+    <section id="check" class="news-section">
       <div class="auto-container">
         <div class="sec-title centered">
           <div class="title">SCEECS Conference 2025</div>
@@ -1309,7 +1309,7 @@
 
         </div>
 
-       <table class="table"> 
+       <table class="table scrollSec"> 
           <thead>
             <tr>
               <th scope="col">Mode</th>
@@ -1322,22 +1322,22 @@
               <td>SCEECS'25 Virtual Schedule</td>
               
               
-              <td><a id="1" href="Files/online.pdf">Download</a></td>
+              <td><a id="1" href="Files/SCEECS'25 Online.pdf">Download</a></td>
             </tr>
             <tr>
               <td>SCEECS'25 Physical Schedule</td>
               
               
-              <td><a id="2" href="Files/offline.pdf">Download</a></td>
+              <td><a id="2" href="Files/SCEECS'25 Offline List.pdf">Download</a></td>
             </tr>
             
           </tbody>
         </table>
-        <div class="sec-title centered">
-          <h2 style="font-size: 2vw;">Conference Virtual Session links</h2>
-          
-        </div>
-        <table class="table"> 
+        <!-- <div class="sec-title centered"> -->
+        <!--   <h2 style="font-size: 2vw;">Conference Virtual Session links</h2> -->
+        <!--    -->
+        <!-- </div> -->
+          <!-- <table class="table"> 
           
           </thead>
           <tbody>
@@ -1350,9 +1350,9 @@
             
             
           </tbody>
-        </table>
+</table>-->
       </div>
-    </section> -->
+    </section>
     
     
     <!-- remove inline css from below line to show it on website -->
@@ -2252,7 +2252,7 @@
                       <div class="inner">
                         <div class="content">
                           <div class="count-outer count-box alternate">
-                            <span class="count-text" data-speed="2000" data-stop="2">0</span>
+                            <span class="count-text" data-speed="2000" data-stop="1">0</span>
                           </div>
                           <h4 class="counter-title">
                             Guest <br>
@@ -2268,7 +2268,7 @@
                       <div class="inner">
                         <div class="content">
                           <div class="count-outer count-box">
-                            <span class="count-text" data-speed="2500" data-stop="700">0</span>
+                            <span class="count-text" data-speed="2500" data-stop="1700">0</span>
                           </div>
                           <h4 class="counter-title">
                             &nbsp; Papers <br />
@@ -2486,6 +2486,15 @@
   <script src="js/jquery-ui.js"></script>
   <script src="js/paroller.js"></script>
   <script src="js/script.js"></script>
+
+  <script>
+    const scrollBtn = document.getElementById("scrollBtn");
+    const scrollSec = document.getElementsByClassName("scrollSec");
+
+    scrollBtn.addEventListener('click', () => {
+            scrollSec.scrollIntoView({ behavior: 'smooth' });
+        });
+  </script>
 
 </body>
 
