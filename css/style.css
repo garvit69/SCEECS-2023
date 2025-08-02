@@ -4020,7 +4020,7 @@ img {
     display: inline-block;
 }
 
-.main-footer .footer-nav ul li a {
+.main-footer .footer-nav ul li a,.bugFix {
     position: relative;
     color: #ffffff;
     font-size: 16px;
@@ -4030,8 +4030,7 @@ img {
     -moz-transition: all 300ms ease;
     transition: all 300ms ease;
 }
-
-.main-footer .footer-nav ul li a:hover {
+.main-footer .footer-nav ul li a:hover,.bugFix:hover {
     color: #ffa116;
 }
 
@@ -4508,6 +4507,7 @@ img {
     background: url(../images/icons/icon-1.png) no-repeat;
     background-position: left top;
 }
+
 
 .fact-counter.style-two .column .inner .counter-title {
     color: #ffffff;
