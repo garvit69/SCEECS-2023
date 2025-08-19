@@ -118,6 +118,11 @@ body.fancybox-iosfix {
 .fancybox-is-closing .fancybox-stage {
     overflow: visible
 }
+.fancybox-slide video {
+  max-width: 95vw;
+  max-height: 90vh; /
+}
+
 
 .fancybox-slide {
     position: absolute;
