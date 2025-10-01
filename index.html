@@ -21,279 +21,324 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 </head>
 <style>
-
   /* style for call for paper data */
-    @media screen and (min-width:1023px) {
-        .specialBox{
-            right: -399px !important;
-        /* border: 2px solid; */
-        padding-left: 2px;
-        width: 608px;
-        }
-        .spcialDottRegistration{
-            right: -10px !important; 
-        }
-        .spcialDottReview{
-            right: -81px !important;
-        }
-        .submissionDot{
-            right: -10px !important;
-            padding-right: 0px !important;
-        }
-        .acceptanceDot{
-            right: -75px !important;
-            padding-right: 0px !important;
-        }
-        .specialBoxCameraReady{
-            left: -420px !important;
-            padding-right:66px !important;
-        }
-        .paperPresentationBox{
-            right: -348px !important;
-            padding-left: 66px !important;
-        }
-        .publishBox{
-            left: -277px !important; 
-            padding-right: 70px !important;
-        }
-        .reviewBox{
-            left: -272px !important;
-        }
+  @media screen and (min-width:1023px) {
+    .specialBox {
+      right: -399px !important;
+      /* border: 2px solid; */
+      padding-left: 2px;
+      width: 608px;
     }
-    @media screen and (max-width:1023px) {
-        .specialBoxCameraReady{
-            right: -5px !important;
-        }
+
+    .spcialDottRegistration {
+      right: -10px !important;
     }
-    /* @media screen and (max-width:1450px) {
+
+    .spcialDottReview {
+      right: -81px !important;
+    }
+
+    .submissionDot {
+      right: -10px !important;
+      padding-right: 0px !important;
+    }
+
+    .acceptanceDot {
+      right: -75px !important;
+      padding-right: 0px !important;
+    }
+
+    .specialBoxCameraReady {
+      left: -420px !important;
+      padding-right: 66px !important;
+    }
+
+    .paperPresentationBox {
+      right: -348px !important;
+      padding-left: 66px !important;
+    }
+
+    .publishBox {
+      left: -277px !important;
+      padding-right: 70px !important;
+    }
+
+    .reviewBox {
+      left: -272px !important;
+    }
+  }
+
+  @media screen and (max-width:1023px) {
+    .specialBoxCameraReady {
+      right: -5px !important;
+    }
+  }
+
+  /* @media screen and (max-width:1450px) {
         .banner-section{
           background-position: right 50% top 80vw !important;
         }
     } */
-    @media screen and (max-width:1200px) {
-      .banner-section{
-        background-position: right 50% top 70vw !important;
-      }
+  @media screen and (max-width:1200px) {
+    .banner-section {
+      background-position: right 50% top 70vw !important;
     }
-    @media screen and (max-width:860px) {
-        .banner-section{
-          background-position: right 50% top 120% !important;
-        }
+  }
+
+  @media screen and (max-width:860px) {
+    .banner-section {
+      background-position: right 50% top 120% !important;
     }
-    @media screen and (max-width:800px) {
-        .banner-section{
-          background-position: right 50% top -70px !important;
-        }
+  }
+
+  @media screen and (max-width:800px) {
+    .banner-section {
+      background-position: right 50% top -70px !important;
     }
+  }
 
   /* Css for popUPs */
-  #toggle{
-       cursor: pointer;
-       left: 445px;
-   }
-   #toggle i{
-       z-index: 9999999;
-       position: absolute;
-       padding: 10px 8px;
-       width: 40px;
-       color: #000;
-       font-size: 30px;
-       right: 25px;
-   }
-   #popUp{
-       position: fixed;
-       top:50%;
-       color: white;
-       left:50% ;
-       transform: translate(-50%, -50%);
-       /* background: #000; */
-       display: flex;
-       /* flex-wrap: wrap; */
-       flex-direction: row;
-       width: 30%;
-       height: fit-content;
-       /* font-family: 'Autour One', cursive; */
-       display: none;
-       z-index: 1000;
-   }
-   #boxL{
-       padding: 4rem 2rem;
-       background: #3AAAFF;
-       color: white;
-       padding: 30px;
-       width: 95%;
-       height: 90%;
-       border-radius: 10px;
-   }
-   #disc{
-       font-size: 1.2rem;
-       color: white;
-       padding: 20px;
-       margin-top: 20px 0 20px 0;
-       text-align: center;
-   }
-   #deadlineDisc{
+  #toggle {
+    cursor: pointer;
+    left: 445px;
+  }
+
+  #toggle i {
+    z-index: 9999999;
+    position: absolute;
+    padding: 10px 8px;
+    width: 40px;
+    color: #000;
+    font-size: 30px;
+    right: 25px;
+  }
+
+  #popUp {
+    position: fixed;
+    top: 50%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background: #000; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    width: 30%;
+    height: fit-content;
+    /* font-family: 'Autour One', cursive; */
+    display: none;
+    z-index: 1000;
+  }
+
+  #boxL {
+    padding: 4rem 2rem;
+    background: #3AAAFF;
+    color: white;
+    padding: 30px;
+    width: 95%;
+    height: 90%;
+    border-radius: 10px;
+  }
+
+  #disc {
+    font-size: 1.2rem;
+    color: white;
+    padding: 20px;
+    margin-top: 20px 0 20px 0;
+    text-align: center;
+  }
+
+  #deadlineDisc {
     font-size: 1.3rem;
     text-align: center;
-   }
-   #deadlineDisc span{
-      font-weight: 600;
-   }
-   .imagebox{
-       display: flex;
-       align-items: center;
-       margin: 0.8rem 0;
-       padding-bottom: 0;
-       justify-content: center;
-   }
-   #mainWord{
-       color: rgb(247, 25, 25);
-       font-weight:600;
-   }
-   #title{
-       text-align: center;
-       color:rgb(82, 4, 134);
-       font-size: 1.5rem;
-       text-transform: uppercase;
-       font-family: 'Times New Roman', Times, serif;
-       font-weight: bold;
-   }
-   #mainHeading{
-       text-align: center;
-       color:rgb(82, 4, 134);
-       font-size: 1.05rem;
-       text-transform: uppercase;
-       font-weight: 700;
-   }
-   button{
-       border-radius: 5px;
-       background: white;
-       width: 10rem;
-       padding: 10px 20px;
-       margin-top: 5px;
-       margin-bottom: 5px;
-       margin: auto;
-       display: block;
-   }
-   .imagebox img{
-       width: 130px;
-   }
+  }
 
-   .overlay {
-       display: none;
-       position: fixed;
-       top: 0;
-       left: 0;
-       width: 100%;
-       height: 100%;
-       background: rgba(0, 0, 0, 0.7);
-       z-index: 999; /* Ensure the overlay is above other content */
-       transition: opacity .3s;
-}
-   #btn{
-       display: flex;
-       gap: 20px;
-       align-items: center;
-       padding-top: 8px;
-       justify-content: center;
-   }
-   /* @media only screen and (max-width: 1300px){
+  #deadlineDisc span {
+    font-weight: 600;
+  }
+
+  .imagebox {
+    display: flex;
+    align-items: center;
+    margin: 0.8rem 0;
+    padding-bottom: 0;
+    justify-content: center;
+  }
+
+  #mainWord {
+    color: rgb(247, 25, 25);
+    font-weight: 600;
+  }
+
+  #title {
+    text-align: center;
+    color: rgb(82, 4, 134);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+  }
+
+  #mainHeading {
+    text-align: center;
+    color: rgb(82, 4, 134);
+    font-size: 1.05rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  button {
+    border-radius: 5px;
+    background: white;
+    width: 10rem;
+    padding: 10px 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: auto;
+    display: block;
+  }
+
+  .imagebox img {
+    width: 130px;
+  }
+
+  .overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 999;
+    /* Ensure the overlay is above other content */
+    transition: opacity .3s;
+  }
+
+  #btn {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-top: 8px;
+    justify-content: center;
+  }
+
+  /* @media only screen and (max-width: 1300px){
       .banner-section{
         background-position: right 50% top 210% !important;
       }
    } */
-   @media only screen and (max-width: 1200px){
-       #disc{
-           font-size: 1rem ;
-       }
-       #popUp{
-           flex-wrap: wrap;
-           width: 60%;
-           height: fit-content;
-           overflow: hidden;
-       }
-       #boxL{
-           width: 95%;
-           height: 90%;
-       }
-       .imagebox img{
-       width: 130px;
-       padding-bottom: 1.2rem;
+  @media only screen and (max-width: 1200px) {
+    #disc {
+      font-size: 1rem;
+    }
 
-   }
-   button{
-       width: 10rem;
-   }
-   }
-   @media only screen and (max-width: 610px){
-       .imagebox img{
-       width: 130px;
-       padding-bottom: 1.2rem;
+    #popUp {
+      flex-wrap: wrap;
+      width: 60%;
+      height: fit-content;
+      overflow: hidden;
+    }
 
-   }
-   .imagebox{
-       padding: 0;
-   }
-       #popUp{
-           /* flex-wrap: wrap; */
-           width: 90%;
-           height: fit-content;
-           overflow: hidden;
-           border-radius: 7.9px;
-           /* font-family: 'Anton', sans-serif; */
-       }
-       .imagebox{
-           font-size: 1.2rem;
-           padding: 10px;
-       }
-       #boxL{
-           width: 95%;
-           height: 90%;
-           border-radius: 8px;
-       }
-       button{
-           font-size: 1em;
-           width: 9rem;
-       }
-       #disc{
-           font-size: 1rem ;
-       }
+    #boxL {
+      width: 95%;
+      height: 90%;
+    }
 
-   }
-       @media only screen and (max-width: 430px){
-           #boxL{
-               height:75%;
-               width: 98%;
-           }
-           button{
-               width: 100%;
-           }
-       }
-       @media only screen and (max-width: 370px){
-           #boxL{
-               height:75%;
-               width: 98%;
-           }
-           button{
-               width: 100%;
-               padding: 10px 10px;
-           }
-       }
-       @media only screen and (max-width: 310px){
-           #boxL{
-               height:75%;
-               width: 98%;
-           }
-           button{
-               width: 100%;
-               padding: 7px 7px;
-           }
-           
-       }
-       html{
-            scroll-behavior: smooth;
-           }
+    .imagebox img {
+      width: 130px;
+      padding-bottom: 1.2rem;
+
+    }
+
+    button {
+      width: 10rem;
+    }
+  }
+
+  @media only screen and (max-width: 610px) {
+    .imagebox img {
+      width: 130px;
+      padding-bottom: 1.2rem;
+
+    }
+
+    .imagebox {
+      padding: 0;
+    }
+
+    #popUp {
+      /* flex-wrap: wrap; */
+      width: 90%;
+      height: fit-content;
+      overflow: hidden;
+      border-radius: 7.9px;
+      /* font-family: 'Anton', sans-serif; */
+    }
+
+    .imagebox {
+      font-size: 1.2rem;
+      padding: 10px;
+    }
+
+    #boxL {
+      width: 95%;
+      height: 90%;
+      border-radius: 8px;
+    }
+
+    button {
+      font-size: 1em;
+      width: 9rem;
+    }
+
+    #disc {
+      font-size: 1rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 430px) {
+    #boxL {
+      height: 75%;
+      width: 98%;
+    }
+
+    button {
+      width: 100%;
+    }
+  }
+
+  @media only screen and (max-width: 370px) {
+    #boxL {
+      height: 75%;
+      width: 98%;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px 10px;
+    }
+  }
+
+  @media only screen and (max-width: 310px) {
+    #boxL {
+      height: 75%;
+      width: 98%;
+    }
+
+    button {
+      width: 100%;
+      padding: 7px 7px;
+    }
+
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
 </style>
+
 <body>
   <div class="page-wrapper">
     <!-- Main Header-->
@@ -304,7 +349,8 @@
           <div class="clearfix">
             <div class="pull-left logo-box">
               <div class="logo">
-                <a href="index.html"><img src="images/logoWhite2026.png" alt="" title="" id="mainlogo" style="width: 90px; height: 59px;"/></a>
+                <a href="index.html"><img src="images/logoWhite2026.png" alt="" title="" id="mainlogo"
+                    style="width: 90px; height: 59px;" /></a>
               </div>
 
               <!--Mobile Navigation Toggler For Mobile-->
@@ -331,8 +377,8 @@
                     <li class="current"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
                     <li><a href="speaker.html">Guest Lecture</a></li>
-                     <li><a href="callforpaper.html">Call For Paper</a></li>
-                     <!-- <li class="dropdown"><a href="#">Guidelines</a>
+                    <li><a href="callforpaper.html">Call For Paper</a></li>
+                    <!-- <li class="dropdown"><a href="#">Guidelines</a>
                             <ul>
                               <li><a href="guidelines.html">Copyright Transfer and Registration</a></li>
                               <li><a href="guidelines2.html">Camera Ready Submission and PDF Express</a></li>
@@ -361,7 +407,8 @@
         <div class="auto-container clearfix">
           <!--Logo-->
           <div class="logo pull-left">
-            <a href="index.html" class="img-responsive"><img src="images/logoWhite2026.png" alt="logo" title="" style="width: 80px; height: 56px;" /></a>
+            <a href="index.html" class="img-responsive"><img src="images/logoWhite2026.png" alt="logo" title=""
+                style="width: 80px; height: 56px;" /></a>
           </div>
 
           <!--Right Col-->
@@ -407,7 +454,8 @@
     <!-- End Main Header -->
 
     <!-- Banner Section -->
-    <section class="banner-section" style="background-image: url(./images/conference.jpg); background-position: right 50% top 60vw ;">
+    <section class="banner-section"
+      style="background-image: url(./images/conference.jpg); background-position: right 50% top 60vw ;">
       <div class="banner-icons parallax-scene-1">
         <!-- Icon One -->
         <div data-depth="0.20" class="icon icon-one parallax-layer">
@@ -427,7 +475,7 @@
                 IEEE <br />
                 SCEECS 2026
               </h2>
-<!--               <div class="text">
+              <!--               <div class="text">
                 coming soon
               </div> -->
               <div class="text">
@@ -443,24 +491,24 @@
             </div>
           </div>
 
-         
+
         </div>
       </div>
     </section>
     <!-- End Banner Section -->
 
     <!-- Timer Section -->
-     <section class="timer-section">
+    <section class="timer-section">
       <div class="auto-container">
         <div class="inner-container margin-top">
-          <div class="row clearfix"> 
+          <div class="row clearfix">
             <!-- Title Column -->
-           <div class="title-column col-lg-4 col-md-12 col-sm-12">
+            <div class="title-column col-lg-4 col-md-12 col-sm-12">
               <div class="inner-column">
                 <h2>Until Event Start</h2>
                 <div class="text">Time Remaining</div>
               </div>
-            </div> 
+            </div>
 
             <!-- Time Column -->
             <div class="time-column col-lg-8 col-md-12 col-sm-12">
@@ -473,7 +521,7 @@
           </div>
         </div>
       </div>
-    </section> 
+    </section>
     <!-- End Timer Section -->
 
     <!-- Welcome Section -->
@@ -488,7 +536,7 @@
         </div>
 
 
-        
+
 
         <!-- Title Box -->
         <div class="title-box centered">
@@ -513,7 +561,7 @@
             and uploading it on the world wide web, making it more portable to
             anyone in the world.
           </div>
-         
+
         </div>
 
         <!--Video Box-->
@@ -647,17 +695,22 @@
               <div class="separator"></div>
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              We are thrilled to announce that the CS maestro Sandeep Jain will be our first keynote speaker at SCEECS'25!
+              We are thrilled to announce that the CS maestro Sandeep Jain will be our first keynote speaker at
+              SCEECS'25!
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              Sandeep Jain, founder and CEO of GeeksforGeeks, is a true leader in the field of computer science and is known for his exceptional contributions as a mentor and the creator of DSA self-paced course. Being an  IIT ROORKEE alumnus, a TEDx speaker and a dedicated blogger, he is the perfect role model for students.
+              Sandeep Jain, founder and CEO of GeeksforGeeks, is a true leader in the field of computer science and is
+              known for his exceptional contributions as a mentor and the creator of DSA self-paced course. Being an IIT
+              ROORKEE alumnus, a TEDx speaker and a dedicated blogger, he is the perfect role model for students.
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              Don't miss out on the opportunity to hear from such a celebrated visionary entrepreneur! Register NOW at SCEECS'25!
+              Don't miss out on the opportunity to hear from such a celebrated visionary entrepreneur! Register NOW at
+              SCEECS'25!
             </div>
             <div class="buttons-box">
-              <a href="https://forms.gle/7gg5kswN18cP1pXP8" target="_blank" class="theme-btn btn-style-one">Register Here.</a>
-            </div> 
+              <a href="https://forms.gle/7gg5kswN18cP1pXP8" target="_blank" class="theme-btn btn-style-one">Register
+                Here.</a>
+            </div>
           </div>
         </div>
         <!-- remove display none from line 401  -->
@@ -687,21 +740,28 @@
               <div class="separator"></div>
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              We are elated to unveil the second keynote of SCEECS'25, featuring the eminently accomplished Mr. Kshitij Kumar sir, a proud MANIT Alumnus, and Chief Data Officer at OneFootball. 
+              We are elated to unveil the second keynote of SCEECS'25, featuring the eminently accomplished Mr. Kshitij
+              Kumar sir, a proud MANIT Alumnus, and Chief Data Officer at OneFootball.
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              With a wealth of experience and expertise spanning Artificial Intelligence, Machine Learning, Data Integrity, blockchain, Ethereum, and crypto technologies, he is a paragon of innovation. Expand your horizons and understand the practical use cases of data, AI, & ML in day-to-day businesses. The keynote will be a veritable cornucopia of knowledge, as it will feature not only a technologist but also a leader in startups, sales, biz dev, marketing, and the progenitor of OTT pioneer TellyTopia. 
+              With a wealth of experience and expertise spanning Artificial Intelligence, Machine Learning, Data
+              Integrity, blockchain, Ethereum, and crypto technologies, he is a paragon of innovation. Expand your
+              horizons and understand the practical use cases of data, AI, & ML in day-to-day businesses. The keynote
+              will be a veritable cornucopia of knowledge, as it will feature not only a technologist but also a leader
+              in startups, sales, biz dev, marketing, and the progenitor of OTT pioneer TellyTopia.
             </div>
             <div class="text" style="color: black;font-weight: 400;">
-              A chance to start your career in the field and gain invaluable insights from the industry leader himself. Grab your seat. Register for SCEECS'25 now!
+              A chance to start your career in the field and gain invaluable insights from the industry leader himself.
+              Grab your seat. Register for SCEECS'25 now!
             </div>
             <div class="buttons-box">
-              <a href="https://forms.gle/7gg5kswN18cP1pXP8" target="_blank" class="theme-btn btn-style-one">Register Here.</a>
-            </div> 
+              <a href="https://forms.gle/7gg5kswN18cP1pXP8" target="_blank" class="theme-btn btn-style-one">Register
+                Here.</a>
+            </div>
           </div>
           <!-- remove display none from line 441  -->
         </div>
-        
+
 
       </div>
     </section>
@@ -714,11 +774,11 @@
           <h2>Guest Speakers</h2>
           <div class="separator"></div>
         </div>
-        <div class="row clearfix" >
+        <div class="row clearfix">
           <!-- Speaker Block DUMMY -->
 
 
-           <div class="speaker-block-two style-two col-lg-6 col-md-6 col-sm-12" >
+          <div class="speaker-block-two style-two col-lg-6 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="dots-one"></div>
               <div class="dots-two"></div>
@@ -726,7 +786,8 @@
                 <img src="images/gl/love_babbar.jpg" alt="" />
                 <ul class="social-box">
                   <li>
-                    <a href="https://www.linkedin.com/in/love-babbar-38ab2887/?originalSubdomain=in" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/love-babbar-38ab2887/?originalSubdomain=in" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
                   </li>
                 </ul>
               </div>
@@ -761,20 +822,20 @@
                       <h3>WILL BE INFORMED</h3>
                       <span class="speakder-designation"></span>
                       <div class="text">
-                        
+
                       </div>
                       <ul class="speaker-list">
                         <li>
-                          <b></b> 
+                          <b></b>
                         </li>
                         <li>
-                     
+
                         </li>
                         <li>
-                          <b></b> 
+                          <b></b>
                         </li>
                         <li>
-                          <span></span> <br />  <br /> 
+                          <span></span> <br /> <br />
                         </li>
 
                       </ul>
@@ -783,12 +844,12 @@
                 </div>
               </div>
             </div>
-          </div>  
+          </div>
 
           <!-- Speaker Block DUMMY-->
 
 
-          <div class="speaker-block-two style-two col-lg-6 col-md-6 col-sm-12" >
+          <div class="speaker-block-two style-two col-lg-6 col-md-6 col-sm-12">
             <div class="inner-box">
               <div class="dots-one"></div>
               <div class="dots-two"></div>
@@ -796,7 +857,8 @@
                 <img src="images/gl/lakshya_kumar.jpeg" alt="" />
                 <ul class="social-box">
                   <li>
-                    <a href="https://www.linkedin.com/in/lakshayk12/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+                    <a href="https://www.linkedin.com/in/lakshayk12/" target="_blank"><i
+                        class="ri-linkedin-box-fill"></i></a>
                   </li>
                 </ul>
               </div>
@@ -831,20 +893,20 @@
                       <h3>WILL BE INFORMED</h3>
                       <span class="speakder-designation"></span>
                       <div class="text">
-                        
+
                       </div>
                       <ul class="speaker-list">
                         <li>
-                          <b></b> 
+                          <b></b>
                         </li>
                         <li>
-                     
+
                         </li>
                         <li>
-                          <b></b> 
+                          <b></b>
                         </li>
                         <li>
-                          <span></span> <br />  <br /> 
+                          <span></span> <br /> <br />
                         </li>
 
                       </ul>
@@ -853,14 +915,14 @@
                 </div>
               </div>
             </div>
-          </div>  
+          </div>
 
-          
+
           <!-- DON'T FORGET TO REMOVE INLINE CSS FROM LINE 634   -->
     </section>
 
     <!-- Welcome Section -->
-    <section class="news-section"  style="display: none;">
+    <section class="news-section" style="display: none;">
       <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title">
@@ -888,18 +950,21 @@
                 </ul>
                 <h3>
                   <a href="workshop.html">Workshop on Data Structures and Algorithms by Geeks for geeks</a> -->
-                  <!-- </h3>
+              <!-- </h3>
                   </div> -->
             </div>
           </div>
           <div class="pull-right col-lg-8 col-md-6 col-sm-12">
             <div class="text px-4 py-4" style="font-size: 18px; color: #666666;">
-              <p>Hey folks! 
-                IEEE MANIT Student Branch is knocking your doorsteps with an opportunity to queue your mind and stack up your abilities. A preparation guide to Data Structures and Algorithms curated by Cybrom, along with expert sessions by Lakshay Kumar and Love Babbar to help you route your placements in the right direction. 
+              <p>Hey folks!
+                IEEE MANIT Student Branch is knocking your doorsteps with an opportunity to queue your mind and stack up
+                your abilities. A preparation guide to Data Structures and Algorithms curated by Cybrom, along with
+                expert sessions by Lakshay Kumar and Love Babbar to help you route your placements in the right
+                direction.
                 The clock is ticking and meet a better version of the coder inside you by registering below.
-                </p>
+              </p>
 
-              <p> Steps to follow: 
+              <p> Steps to follow:
                 <br>
                 1. Pay the fee
                 <br>
@@ -911,9 +976,9 @@
                 <br>
                 And we are good to go!
                 <br>
-                Link to register - <a href="https://forms.gle/mmCfSuuoGuYN2dRv9"> Register </a> 
-                
-                </p>
+                Link to register - <a href="https://forms.gle/mmCfSuuoGuYN2dRv9"> Register </a>
+
+              </p>
 
               <!-- <a href="http://wa.me/+918769900778">Registrations open now. DM Arya: 9479515131, or Pratyusha: 8769900778
                 with your Name & College for Registration.</a> -->
@@ -926,270 +991,270 @@
 
 
     <!-- tracks and topics -->
-            <!--End Page Title-->
-            <section class="price-section-two style-two" style="background-image: url(images/background/cfpbg.png)">
-              <div class="auto-container">
-                  <!-- Sec Title -->
-                 
-                  <div class="sec-title light centered">
-                      <div class="title">SCEECS'26</div>
-                      <h2 style="color: black">Tracks and Topics</h2>
-                      <div class="separator"></div>
-                      <div class="title" style="margin-top: 20px; font-size: 20px; ">ORIGINAL AND UNPUBLISHED RESEARCH
-                          PAPERS ARE INVITED FOR PRESENTATION ON THE FOLLOWING THEME AREAS, BUT NOT RESTRICTED TO THE
-                          FOLLOWING VERTICALS.</div>
-                  </div>
-  
-                  <div class="row clearfix">
-                      <!-- Price Block Two -->
-  
-                      <!-- Price Block Two -->
-  
-                      <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12">
-                          <div class="inner-box wow fadeInLeft" data-wow-delay="750ms" data-wow-duration="1500ms">
-                              <div class="icon-box">
-                                  <span class="icon flaticon-diamond"></span>
-                              </div>
-                              <div class="price" id="subhead">ELECTRONICS</div>
-                              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
-                                  style="text-align: left">
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC01:</b></span> Optical and Wireless Communication & Networking
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC02:</b></span> Signal, Image, and Video Processing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC03:</b></span> Robotics and Autonomous Systems
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC04:</b></span> Communication Systems
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC05:</b></span> VLSI and Embedded Systems
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC06:</b></span> Control, Instrumentation, and Power Electronics
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC07:</b></span> Neural Networking
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC08:</b></span> Ad-hoc, Mesh and Sensor Networks
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC09:</b></span> Pattern Recognition and Object Tracking
-                                      Processing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC10:</b></span>  RF Circuits, Systems, and Antenna
-                                      Processing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC11:</b></span> Pattern Recognition and Object
-                                      Tracking
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC12:</b></span> RF Circuits, Systems and Antennas
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC13:</b></span> Electronic Devices and Circuits
-                                      and Fabrication Processes
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC14:</b></span> Mobile sensing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC15:</b></span> Satellite Communication
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EC16:</b></span> Internet of Things
-                                  </li>
-                              </ul>
-                          </div>
-                      </div>
-  
-                      <!-- Price Block Two -->
-                      <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12">
-                          <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
-                              <div class="icon-box">
-                                  <span class="icon flaticon-rocket-ship"></span>
-                              </div>
-                              <div class="price" id="subhead">ELECTRICAL</div>
-                              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
-                                  style="text-align: left">
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE01:</b></span> Power Electronics, Machines &
-                                      Drives
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE02:</b></span> Power Generation, Transmission, and Distribution
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE03:</b></span> Renewable Energy Sources
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE04:</b></span> High Voltage and Insulation Engineering
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE05:</b></span> Sensors and Signal Conditioning
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE06:</b></span> Soft Computing in Electrical Power and Energy System
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE07:</b></span> Electric Machines and Drives
-                                      
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE08:</b></span> Advanced Propulsion Science
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE09:</b></span> Smart Grid and Smart Technologies
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE10:</b></span> Smart Sensors and Sensor Networks
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE11:</b></span> Cyber-Physical Systems
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>EE12:</b></span> Sustainable Engineering
-                                  </li>
-                                  
-                              </ul>
-                          </div>
-  
-                      </div>
-  
-                      <!-- Price Block Two -->
-                      <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12" id="cse">
-                          <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
-                              <div class="icon-box">
-                                  <span class="icon flaticon-internet-1"></span>
-                              </div>
-                              <div class="price" id="subhead">COMPUTER SCIENCE</div>
-                              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
-                                  style="text-align: left">
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS01:</b></span> Big Data Analytics and High-Performance Computing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS02:</b></span> Computing Technologies
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS03:</b></span> Artificial Intelligence/Machine
-                                      Learning
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS04:</b></span>  Network Security and Cryptography
-  
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS05:</b></span> Natural Language Processing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS06:</b></span> Biomedical and Health Informatics
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS07:</b></span> Cybersecurity
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS08:</b></span> Biometrics and Data Privacy
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS09:</b></span> Blockchain
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS10:</b></span> Human-Computer Interaction
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS11:</b></span> Computer Vision, Graphics, and Animation
-  
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS12:</b></span> Computing Architectures and Systems
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS13:</b></span> Augmented Reality/Virtual Reality
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS14:</b></span> Quantum Computing
-                                  </li>
-                                  <li>
-                                      <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
-                                          class="g-color--dark-head"><b>CS15:</b></span> Edge Computing
-                                  </li>
-                                 
-  
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
+    <!--End Page Title-->
+    <section class="price-section-two style-two" style="background-image: url(images/background/cfpbg.png)">
+      <div class="auto-container">
+        <!-- Sec Title -->
+
+        <div class="sec-title light centered">
+          <div class="title">SCEECS'26</div>
+          <h2 style="color: black">Tracks and Topics</h2>
+          <div class="separator"></div>
+          <div class="title" style="margin-top: 20px; font-size: 20px; ">ORIGINAL AND UNPUBLISHED RESEARCH
+            PAPERS ARE INVITED FOR PRESENTATION ON THE FOLLOWING THEME AREAS, BUT NOT RESTRICTED TO THE
+            FOLLOWING VERTICALS.</div>
+        </div>
+
+        <div class="row clearfix">
+          <!-- Price Block Two -->
+
+          <!-- Price Block Two -->
+
+          <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="750ms" data-wow-duration="1500ms">
+              <div class="icon-box">
+                <span class="icon flaticon-diamond"></span>
               </div>
-          </section>
+              <div class="price" id="subhead">ELECTRONICS</div>
+              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
+                style="text-align: left">
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC01:</b></span> Optical and Wireless Communication & Networking
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC02:</b></span> Signal, Image, and Video Processing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC03:</b></span> Robotics and Autonomous Systems
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC04:</b></span> Communication Systems
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC05:</b></span> VLSI and Embedded Systems
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC06:</b></span> Control, Instrumentation, and Power Electronics
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC07:</b></span> Neural Networking
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC08:</b></span> Ad-hoc, Mesh and Sensor Networks
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC09:</b></span> Pattern Recognition and Object Tracking
+                  Processing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC10:</b></span> RF Circuits, Systems, and Antenna
+                  Processing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC11:</b></span> Pattern Recognition and Object
+                  Tracking
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC12:</b></span> RF Circuits, Systems and Antennas
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC13:</b></span> Electronic Devices and Circuits
+                  and Fabrication Processes
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC14:</b></span> Mobile sensing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC15:</b></span> Satellite Communication
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EC16:</b></span> Internet of Things
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Price Block Two -->
+          <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="500ms" data-wow-duration="1500ms">
+              <div class="icon-box">
+                <span class="icon flaticon-rocket-ship"></span>
+              </div>
+              <div class="price" id="subhead">ELECTRICAL</div>
+              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
+                style="text-align: left">
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE01:</b></span> Power Electronics, Machines &
+                  Drives
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE02:</b></span> Power Generation, Transmission, and Distribution
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE03:</b></span> Renewable Energy Sources
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE04:</b></span> High Voltage and Insulation Engineering
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE05:</b></span> Sensors and Signal Conditioning
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE06:</b></span> Soft Computing in Electrical Power and Energy System
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE07:</b></span> Electric Machines and Drives
+
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE08:</b></span> Advanced Propulsion Science
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE09:</b></span> Smart Grid and Smart Technologies
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE10:</b></span> Smart Sensors and Sensor Networks
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE11:</b></span> Cyber-Physical Systems
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>EE12:</b></span> Sustainable Engineering
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Price Block Two -->
+          <div class="price-block-two col-xl-30 col-lg-6 col-md-6 col-sm-12" id="cse">
+            <div class="inner-box wow fadeInLeft" data-wow-delay="250ms" data-wow-duration="1500ms">
+              <div class="icon-box">
+                <span class="icon flaticon-internet-1"></span>
+              </div>
+              <div class="price" id="subhead">COMPUTER SCIENCE</div>
+              <ul class="list-unstyled g-full-width--xs g-ul-li-tb-5--xs g-margin-b-20--xs g-margin-b-0--sm"
+                style="text-align: left">
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS01:</b></span> Big Data Analytics and High-Performance Computing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS02:</b></span> Computing Technologies
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS03:</b></span> Artificial Intelligence/Machine
+                  Learning
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS04:</b></span> Network Security and Cryptography
+
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS05:</b></span> Natural Language Processing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS06:</b></span> Biomedical and Health Informatics
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS07:</b></span> Cybersecurity
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS08:</b></span> Biometrics and Data Privacy
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS09:</b></span> Blockchain
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS10:</b></span> Human-Computer Interaction
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS11:</b></span> Computer Vision, Graphics, and Animation
+
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS12:</b></span> Computing Architectures and Systems
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS13:</b></span> Augmented Reality/Virtual Reality
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS14:</b></span> Quantum Computing
+                </li>
+                <li>
+                  <i class="g-font-size-12--xs g-color--primary g-margin-r-10--xs ti-check"></i><span
+                    class="g-color--dark-head"><b>CS15:</b></span> Edge Computing
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!--schedule -->
     <section class="programs-section style-two">
       <div class="auto-container">
-          <!-- Sec Title -->
-          <div class="sec-title centered">
-              <div class="title">SCEECS'26 Call For Paper</div>
-              <h2>How it Works</h2>
-              <div class="separator"></div>
-          </div>
-          <div class="inner-container">
-              <!-- Programs Block -->
-           <!-- <div class="programs-block">
+        <!-- Sec Title -->
+        <div class="sec-title centered">
+          <div class="title">SCEECS'26 Call For Paper</div>
+          <h2>How it Works</h2>
+          <div class="separator"></div>
+        </div>
+        <div class="inner-container">
+          <!-- Programs Block -->
+          <!-- <div class="programs-block">
                   <div class="inner-block clearfix">
                       <div class="content col-lg-6 col-md-12 col-sm-12">
                           <div class="content-inner">   -->
-                              <!-- Program Info -->
-                              <!-- added its media query in top of the file -->
-            <!--                  <div class="program-info">
+          <!-- Program Info -->
+          <!-- added its media query in top of the file -->
+          <!--                  <div class="program-info">
                                   REGISTRATION STARTED<span class="time">15 Sep 2024</span><span class="dott spcialDottRegistration"></span>
                               </div>
                               <h3><a class="bold">Get registered on Microsoft CMT.</a></h3>
@@ -1198,12 +1263,16 @@
                   </div>
               </div>     -->
 
-              <!-- Programs Block -->
-              <div class="programs-block style-two">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12">
-                          <div class="content-inner">
-                              <!-- Program Info -->
+          <!-- Programs Block -->
+          <div class="programs-block style-two">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!-- Program Info -->
+
+
+                  <div class="program-info makeDotResponsive">
+                    SUBMISSIONS OPEN<span class="time">1 Sep 2025</span><span class="dott submissionDot"></span>
 
                               <div class="program-info makeDotResponsive">
                                  SUBMISSIONS OPEN<span class="time">1 Sep 2025</span><span class="dott submissionDot"></span>
@@ -1214,102 +1283,148 @@
                               <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference. This service was provided for free by Microsoft and they bore all expenses, including costs for Azure cloud services as well as for software development and support.</p>
                           </div>
                       </div>
-                  </div>
-              </div>
 
-              <!-- Programs Block -->
-              <div class="programs-block">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12 " >
-                          <div class="content-inner" >
-                              <!-- Program Info -->
-                              <div class="program-info reviewBox" style="padding: 0 4px;">
-                                  REVIEW<span class="time">WILL BE INFORMED</span>
-                                  <span class="dott spcialDottReview"></span>
-                              </div>
-                              <h3><a class="bold">Paper is blind reviewed by experts.</a></h3>
-                          </div>
-                      </div>
                   </div>
+                  <!-- <h3><a class="bold">Submit paper on Microsoft CMT.</a></h3>
+                              <span><a href="#" target="_blank">here</a></span> -->
+                  <!--prev link: https://cmt3.research.microsoft.com/User/Login?ReturnUrl=%2FSCEECS2025-->
+                  <h3><a class="bold">Acknowledgement</a></h3>
+                  <p>The Microsoft CMT service was used for managing the peer-reviewing process for this conference.
+                    This service was provided for free by Microsoft and they bore all expenses, including costs for
+                    Azure cloud services as well as for software development and support.</p>
+                </div>
               </div>
-
-              <!-- Programs Block -->
-              <div class="programs-block style-two">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12">
-                          <div class="content-inner">
-                              <!-- Program Info -->
-                              <!-- its media queries is on the top of the page -->
-                              <div class="program-info specialBox"  >
-                                  Acceptance Notification<span class="time">18 Dec 2025</span><span class="dott"></span>
-                              </div>
-                              <h3><a class="bold">Accepted papers will be notified through email.</a></h3>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Programs Block -->
-              <div class="programs-block">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12">
-                          <div class="content-inner">
-                              <!-- Program Info -->
-                              <!-- added its media query in top of the file -->
-                              <div class="program-info specialBoxCameraReady">
-                                  Camera Ready Submissions<span class="time">25 Dec 2025</span><span class="dott" ></span>
-                              </div>
-                              <h3><a class="bold">Camera Ready Submission and Registration will be open for accepted papers.</a></h3>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <!-- Programs Block -->
-              <div class="programs-block style-two">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12">
-                          <div class="content-inner">
-                              <!-- Program Info -->
-                              <!-- its media queries is on the top of the page -->
-                              <div class="program-info paperPresentationBox"  >
-                                  Paper Presentation<span class="time">31 Jan -1 Feb 2026</span><span class="dott acceptanceDot"></span>
-                              </div>
-                              <h3><a class="bold">Accepted Papers will be presented in conference in hybrid mode.</a></h3>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-              
-              <!-- Programs Block -->
-              <div class="programs-block">
-                  <div class="inner-block clearfix">
-                      <div class="content col-lg-6 col-md-12 col-sm-12">
-                          <div class="content-inner">
-                              <!-- Program Info -->
-                              <!-- its media queries is on the top of the page -->
-                              <div class="program-info publishBox">
-                                  PUBLISH<span class="time">WILL BE INFORMED</span><span class="dott"></span>
-                              </div>
-                              <h3>
-                                  <a class="bold">Accepted papers will be published in the SCEECS 2026
-                                      Conference Proceedings and submitted to IEEE Xplore.</a>
-                              </h3>
-                          </div>
-                      </div>
-                  </div>
-              </div>
+            </div>
           </div>
 
-          <div class="btn-box text-center">
-              <a href="https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
-                  class="theme-btn btn-style-one">get More Details</a>
+          <!-- Programs Block -->
+          <div class="programs-block">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12 ">
+                <div class="content-inner">
+                  <!-- Program Info -->
+                  <div class="program-info reviewBox" style="padding: 0 4px;">
+                    REVIEW<span class="time">WILL BE INFORMED</span>
+                    <span class="dott spcialDottReview"></span>
+                  </div>
+                  <h3><a class="bold">Paper is blind reviewed by experts.</a></h3>
+                </div>
+              </div>
+            </div>
           </div>
+
+          <!-- Programs Block -->
+          <div class="programs-block style-two">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!-- Program Info -->
+                  <!-- its media queries is on the top of the page -->
+                  <div class="program-info specialBox">
+                    Acceptance Notification<span class="time">18 Dec 2025</span><span class="dott"></span>
+                  </div>
+                  <h3><a class="bold">Accepted papers will be notified through email.</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programs Block -->
+          <div class="programs-block">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!-- Program Info -->
+                  <!-- added its media query in top of the file -->
+                  <div class="program-info specialBoxCameraReady">
+                    Camera Ready Submissions<span class="time">25 Dec 2025</span><span class="dott"></span>
+                  </div>
+                  <h3><a class="bold">Camera Ready Submission and Registration will be open for accepted papers.</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programs Block -->
+          <div class="programs-block style-two">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!-- Program Info -->
+                  <!-- its media queries is on the top of the page -->
+                  <div class="program-info paperPresentationBox">
+                    Paper Presentation<span class="time">31 Jan -1 Feb 2026</span><span
+                      class="dott acceptanceDot"></span>
+                  </div>
+                  <h3><a class="bold">Accepted Papers will be presented in conference in hybrid mode.</a></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Programs Block -->
+          <div class="programs-block">
+            <div class="inner-block clearfix">
+              <div class="content col-lg-6 col-md-12 col-sm-12">
+                <div class="content-inner">
+                  <!-- Program Info -->
+                  <!-- its media queries is on the top of the page -->
+                  <div class="program-info publishBox">
+                    PUBLISH<span class="time">WILL BE INFORMED</span><span class="dott"></span>
+                  </div>
+                  <h3>
+                    <a class="bold">Accepted papers will be published in the SCEECS 2026
+                      Conference Proceedings and submitted to IEEE Xplore.</a>
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="btn-box text-center">
+          <a href="https://journals.ieeeauthorcenter.ieee.org/submit-your-article-for-peer-review/the-ieee-article-submission-process/"
+            class="theme-btn btn-style-one">get More Details</a>
+        </div>
+
+        <div class="fee-section-container">
+          <!-- Title -->
+          <h2 class="fee-title">REGISTRATION FEE DETAILS</h2>
+
+          <!-- Table -->
+          <div class="fee-table-wrapper">
+            <table class="fee-table">
+              <thead>
+                <tr>
+                  <th>Category</th>
+                  <th>Early</th>
+                  <th>Late</th>
+                  <th>On-Desk</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="fee-category">IEEE Members</td>
+                  <td>₹ 2500</td>
+                  <td>₹ 3000</td>
+                  <td>₹ 3500</td>
+                </tr>
+                <tr>
+                  <td class="fee-category">Non-IEEE Members</td>
+                  <td>₹ 3000</td>
+                  <td>₹ 3500</td>
+                  <td>₹ 4000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
       </div>
       <div class="side-img">
-          <img src="images/resource/id-card.png" alt="" />
+        <img src="images/resource/id-card.png" alt="" />
       </div>
-  </section>
+    </section>
 
     <section id="check" class="news-section">
       <div class="auto-container">
@@ -1320,7 +1435,7 @@
 
         </div> -->
 
-       <!-- <table class="table scrollSec"> 
+        <!-- <table class="table scrollSec"> 
           <thead>
             <tr>
               <th scope="col">Mode</th>
@@ -1348,7 +1463,7 @@
         <!--   <h2 style="font-size: 2vw;">Conference Virtual Session links</h2> -->
         <!--    -->
         <!-- </div> -->
-          <!-- <table class="table"> 
+        <!-- <table class="table"> 
           
           </thead>
           <tbody>
@@ -1364,8 +1479,8 @@
 </table>-->
       </div>
     </section>
-    
-    
+
+
     <!-- remove inline css from below line to show it on website -->
     <section class="sponsors-section-two" style="display: none;">
 
@@ -1386,8 +1501,9 @@
             <!-- <h2 class="centered mt-2" style="color: #222222; font-weight:700;">The SCEECS Student Club</h2>
             <h4>- the official sponsor of SCEECS organized by IEEE MANIT STUDENT BRANCH</h4> -->
           </div>
-          
-          <a href="https://talentbattle.in"><img src="images/clients/talent_battle_logo (1).png" alt="" style="height: 100px;"></a>
+
+          <a href="https://talentbattle.in"><img src="images/clients/talent_battle_logo (1).png" alt=""
+              style="height: 100px;"></a>
           <a href="https://www.interviewcake.com/assets"><img src="images/clients/interview_cake.png" alt=""></a>
           <a href=""><img src="images/clients/guvi-logo.png" alt=""></a>
         </div>
@@ -1415,7 +1531,7 @@
         </div>
 
         <div class="sponsors-list">
-          <img style="height: 80px;"  src="sponsors/codingNinjas.png" alt="" />
+          <img style="height: 80px;" src="sponsors/codingNinjas.png" alt="" />
           <img style="height: 150px;" src="sponsors/coding-thinker-logo.png" alt="" />
           <img style="height: 200px;" src="sponsors/balsamiq2.png" alt="" />
           <img style="height: 200px;" src="sponsors/ibuddy2.png" alt="" />
@@ -1429,7 +1545,7 @@
           <img src="images/clients/5.png" alt="" />
           <img src="images/clients/6.png" alt="" />
           <img src="images/clients/7.png" alt="" />
-          
+
         </div>
 
 
@@ -1439,7 +1555,8 @@
     <!-- End Sponsors Section -->
     <!-- Events Section -->
 
-    <section id="event_schedule" class="events-section" style="background-image: url(images/background/2.png); display: none;">
+    <section id="event_schedule" class="events-section"
+      style="background-image: url(images/background/2.png); display: none;">
       <div class="auto-container">
         <!-- Sec Title -->
         <div class="sec-title centered">
@@ -1449,9 +1566,9 @@
         </div>
 
         <!-- Events Info Tabs -->
-        <div class="events-info-tabs" >
+        <div class="events-info-tabs">
           <!-- Events Tabs -->
-          <div class="events-tabs tabs-box" >
+          <div class="events-tabs tabs-box">
             <!--Tab Btns-->
             <ul class="tab-btns tab-buttons clearfix">
               <li data-tab="#day-one" class="tab-btn active-btn">
@@ -1870,7 +1987,8 @@
                               <a href="#">WORKSHOP</a>
                             </h2>
                             <div class="text">
-                              KEYNOTE SESSION 1 BY MR. LAKSHAY KUMAR <br> <span style="font-size: smaller;">(CO-FOUNDER CODEHELP AND CS - ADOBE)</span>
+                              KEYNOTE SESSION 1 BY MR. LAKSHAY KUMAR <br> <span style="font-size: smaller;">(CO-FOUNDER
+                                CODEHELP AND CS - ADOBE)</span>
                             </div>
                             <div class="text font-weight-bold">TIME: WILL BE INFORMED</div>
                             <div class="text font-weight-bold">VENUE: WILL BE INFORMED</div>
@@ -1913,7 +2031,8 @@
                               <a href="schedule.html">WORKSHOP</a>
                             </h2>
                             <div class="name">
-                              KEYNOTE SESSION 2 BY MR. LOVE BABBAR <br> <span style="font-size: smaller;">(FOUNDER CODEHELP)</span>
+                              KEYNOTE SESSION 2 BY MR. LOVE BABBAR <br> <span style="font-size: smaller;">(FOUNDER
+                                CODEHELP)</span>
 
                             </div>
                             <div class="text"></div>
@@ -1990,8 +2109,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_1.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_1.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2008,8 +2127,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_2.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_2.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2026,8 +2145,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_3.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_3.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2044,8 +2163,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_4.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_4.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2062,8 +2181,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_5.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_5.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2080,8 +2199,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_9.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_9.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2098,8 +2217,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_7.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_7.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2116,8 +2235,8 @@
                 <div class="overlay-box">
                   <div class="overlay-inner">
                     <div class="overlay-content">
-                      <a class="plus" href="images/SCEECS/SCEECS24_8.JPG" data-fancybox="gallery-1" data-caption=""><span
-                          class="flaticon-add-1"></span></a>
+                      <a class="plus" href="images/SCEECS/SCEECS24_8.JPG" data-fancybox="gallery-1"
+                        data-caption=""><span class="flaticon-add-1"></span></a>
                     </div>
                   </div>
                 </div>
@@ -2206,7 +2325,7 @@
                     You can have the wrong guy with the right instrument.<br />&nbsp;
                   </div>
                   <div class="quote-icon flaticon-right-quote"></div>
-                  
+
                 </div>
               </div>
               <div class="lower-content">
@@ -2225,85 +2344,86 @@
     </section>
 
 
-            <!-- Counter Section -->
-            <section class="counter-section-two" style="margin-top: 120px; background-image: url(images/background/7.jpg)" style="display: none;">
-              <div class="auto-container">
-                <!-- Fact Counter -->
-                <div class="fact-counter style-two">
-                  <div class="row clearfix">
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div class="inner">
-                        <div class="content">
-                          <div class="count-outer count-box">
-                            <span class="count-text" data-speed="2000" data-stop="2">0</span>
-                          </div>
-                          <h4 class="counter-title">
-                            Days
-                          </h4>
-                          <div class="separator"></div>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div class="inner">
-                        <div class="content">
-                          <div class="count-outer count-box">
-                            <span class="count-text" data-speed="2000" data-stop="3">0</span>
-                          </div>
-                          <h4 class="counter-title">
-                            Conferences
-                          </h4>
-                          <div class="separator"></div>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div class="inner">
-                        <div class="content">
-                          <div class="count-outer count-box alternate">
-                            <span class="count-text" data-speed="2000" data-stop="2">0</span>
-                          </div>
-                          <h4 class="counter-title">
-                            Guest <br>
-                            Lecturers
-                          </h4>
-                          <div class="separator"></div>
-                        </div>
-                      </div>
-                    </div>
-        
-                    <!--Column-->
-                    <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
-                      <div class="inner">
-                        <div class="content">
-                          <div class="count-outer count-box">
-                            <span class="count-text" data-speed="2500" data-stop="1700">0</span>
-                          </div>
-                          <h4 class="counter-title">
-                            &nbsp; Papers <br />
-                              &nbsp;   Reviewed
-                          </h4>
-                          <div class="separator"></div>
-                        </div>
-                      </div>
-                    </div>
-        
-        
+    <!-- Counter Section -->
+    <section class="counter-section-two" style="margin-top: 120px; background-image: url(images/background/7.jpg)"
+      style="display: none;">
+      <div class="auto-container">
+        <!-- Fact Counter -->
+        <div class="fact-counter style-two">
+          <div class="row clearfix">
+            <!--Column-->
+            <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+              <div class="inner">
+                <div class="content">
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="2000" data-stop="2">0</span>
                   </div>
+                  <h4 class="counter-title">
+                    Days
+                  </h4>
+                  <div class="separator"></div>
                 </div>
               </div>
-            </section>
-            <!-- End Counter Section -->
+            </div>
+
+            <!--Column-->
+            <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+              <div class="inner">
+                <div class="content">
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="2000" data-stop="3">0</span>
+                  </div>
+                  <h4 class="counter-title">
+                    Conferences
+                  </h4>
+                  <div class="separator"></div>
+                </div>
+              </div>
+            </div>
+
+            <!--Column-->
+            <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+              <div class="inner">
+                <div class="content">
+                  <div class="count-outer count-box alternate">
+                    <span class="count-text" data-speed="2000" data-stop="2">0</span>
+                  </div>
+                  <h4 class="counter-title">
+                    Guest <br>
+                    Lecturers
+                  </h4>
+                  <div class="separator"></div>
+                </div>
+              </div>
+            </div>
+
+            <!--Column-->
+            <div class="column counter-column col-lg-3 col-md-6 col-sm-12">
+              <div class="inner">
+                <div class="content">
+                  <div class="count-outer count-box">
+                    <span class="count-text" data-speed="2500" data-stop="1700">0</span>
+                  </div>
+                  <h4 class="counter-title">
+                    &nbsp; Papers <br />
+                    &nbsp; Reviewed
+                  </h4>
+                  <div class="separator"></div>
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Counter Section -->
 
     <!-- Fluid Section One -->
     <section class="fluid-section-two" style="display: none;">
       <!-- Section Icons -->
-      <div class="section-icons parallax-scene-3" >
+      <div class="section-icons parallax-scene-3">
         <!-- Icon One -->
         <div class="icon icon-one parallax-layer" data-depth="0.20">
           <img src="images/icons/icon-14.png" alt="" />
@@ -2330,11 +2450,16 @@
             </div>
             <div class="text">
               <p>
-                An opportunity to soar above the rest and shine among your peers! IEEE MANIT Student Branch returns with an invitation to explore the realm of technocrats, gaining recognition in your college by spreading the roots of IEEE-MSB's legacy your way.
+                An opportunity to soar above the rest and shine among your peers! IEEE MANIT Student Branch returns with
+                an invitation to explore the realm of technocrats, gaining recognition in your college by spreading the
+                roots of IEEE-MSB's legacy your way.
               </p>
 
               <p>
-                Envision yourself as the driving head behind sparking curiosity and contributing to a revolutionary research conference that propels our nation's technical odyssey forward. Embrace the role of being at the forefront as a Campus Ambassador for SCEECS'25 - IEEE-MSB's premier conference, driving the narrative of innovation and progress.
+                Envision yourself as the driving head behind sparking curiosity and contributing to a revolutionary
+                research conference that propels our nation's technical odyssey forward. Embrace the role of being at
+                the forefront as a Campus Ambassador for SCEECS'25 - IEEE-MSB's premier conference, driving the
+                narrative of innovation and progress.
               </p>
 
               <div class="fluid-list">
@@ -2378,7 +2503,9 @@
 
           <div class="newsletter-form">
             <div class="form-group">
+
                <a href="docs/CALL FOR PAPER 1.png" target="_blank" class="theme-btn btn-style-one">Download Brochure</a>
+
             </div>
           </div>
         </div>
@@ -2403,8 +2530,7 @@
           </div>
           <ul class="social-icons">
             <li>
-              <a href="https://twitter.com/manit_sb" target="_blank"><span
-                class="fab fa-twitter"></span></a>
+              <a href="https://twitter.com/manit_sb" target="_blank"><span class="fab fa-twitter"></span></a>
             </li>
             <li>
               <a href="https://www.facebook.com/IEEEMANIT" target="_blank"><i class="ri-facebook-fill"></i></a>
@@ -2413,7 +2539,8 @@
               <a href="https://www.instagram.com/ieee_manit/" target="_blank"><i class="ri-instagram-line"></i></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/company/ieeenitb/mycompany/" target="_blank"><i class="ri-linkedin-box-fill"></i></a>
+              <a href="https://www.linkedin.com/company/ieeenitb/mycompany/" target="_blank"><i
+                  class="ri-linkedin-box-fill"></i></a>
             </li>
           </ul>
         </div>
@@ -2423,14 +2550,14 @@
       <div class="footer-nav">
         <div class="auto-container">
           <ul>
-            <li><a style="color:#ff006a" href="index.html" >Home</a></li>
-                                        <li><a href="about.html">About</a></li>
-                                        <!-- <li><a href="workshop.html">Workshop</a></li> -->
-                                        <li><a href="speaker.html">Guest Lecture</a></li>
-                                    <li><a href="callforpaper.html">Call for Paper</a></li>
-                                        </li><a href="gallery.html" class="bugFix">Gallery</a></li> 
-                                        <li><a href="contact.html">Contact Us</a></li>
-                                        <li></li>
+            <li><a style="color:#ff006a" href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <!-- <li><a href="workshop.html">Workshop</a></li> -->
+            <li><a href="speaker.html">Guest Lecture</a></li>
+            <li><a href="callforpaper.html">Call for Paper</a></li>
+            </li><a href="gallery.html" class="bugFix">Gallery</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li></li>
           </ul>
         </div>
       </div>
@@ -2451,6 +2578,20 @@
   </div>
   <!--End pagewrapper-->
 
+
+  <!-- Overlay Page -->
+  <div class="overlay" id="overlay"></div>
+  <!-- Overlay End -->
+
+  <!-- Pop UPs -->
+  <div id="popUp">
+    <span id="toggle">
+      <i class="ri-close-line"></i>
+    </span>
+    <div id="boxL">
+      <p id="title">SCEECS 2026</p>
+      <!-- <p class="imagebox">
+
         <!-- Overlay Page -->
         <div class="overlay" id="overlay"></div>
         <!-- Overlay End -->
@@ -2463,15 +2604,21 @@
             <div id="boxL">
                 <p id="title">SCEECS 2026</p> -->
                 <!-- <p class="imagebox">
+
                   <img src="./codeHelp.png" alt="">
                   <img src="./cybrom.png" alt="">
                 </p>
                 <p id="mainHeading">Join us for an exclusive workshop featuring expert sessions by <span style="color: orangered;">Lakshay Kumar</span>  and <span style="color: orangered;"> Love Babbar</span>, curated by Cybrom.</p>
                 <p id="deadlineDisc">⏰ Time's ticking! Register now. 🚀 Limited seats.</p> -->
-                <!-- <p id="disc">SCEECS 2025 is Here!</p> -->
-                <!-- <div id="btn">
+      <!-- <p id="disc">SCEECS 2025 is Here!</p> -->
+      <!-- <div id="btn">
                     <a href="https://linktr.ee/IEEE_MANIT" target="_blank"><button style="cursor: pointer;">Register Now</button></a>
                 </div> -->
+
+    </div>
+  </div>
+  <!-- Pop UPs  End-->
+
             <!-- </div>
         </div> -->
 
@@ -2496,6 +2643,7 @@
             </div>
         </div>
         <!-- Pop UPs  End-->
+
 
   <!--Scroll to top-->
   <div class="scroll-to-top scroll-to-target" data-target="html">
@@ -2523,11 +2671,10 @@
     const scrollSec = document.getElementsByClassName("scrollSec");
 
     scrollBtn.addEventListener('click', () => {
-            scrollSec.scrollIntoView({ behavior: 'smooth' });
-        });
+      scrollSec.scrollIntoView({ behavior: 'smooth' });
+    });
   </script>
 
 </body>
 
 </html>
-
